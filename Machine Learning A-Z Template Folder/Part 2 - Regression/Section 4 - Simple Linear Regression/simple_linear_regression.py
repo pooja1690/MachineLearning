@@ -1,7 +1,7 @@
 # Simple Linear Regression
 
 # Importing the libraries
-import numpy as np
+#import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -34,20 +34,20 @@ means that the simple linear regressor learnt the correlations between X and Y i
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
-"""
 
-# Visualising the Training set results
+#Visualising the training set results
 plt.scatter(X_train, y_train, color = 'red')
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
-plt.title('Salary vs Experience (Training set)')
-plt.xlabel('Years of Experience')
-plt.ylabel('Salary')
+plt.title('salary vs years of experience')
+plt.xlabel('years of experience')
+plt.ylabel('salary')
 plt.show()
 
-# Visualising the Test set results
+#Visualizing test results
+
 plt.scatter(X_test, y_test, color = 'red')
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
-plt.title('Salary vs Experience (Test set)')
-plt.xlabel('Years of Experience')
-plt.ylabel('Salary')
-plt.show()"""
+plt.title('salary vs years of experience')
+plt.xlabel('years of experience')
+plt.ylabel('salary')
+plt.show()
